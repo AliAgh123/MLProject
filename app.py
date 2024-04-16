@@ -10,7 +10,7 @@ model = joblib.load('svc_model.pkl')
 
 @app.route("/")
 def hello_world():
-    return render_template('hello.html')
+    return render_template('index.html')
 
 
 @app.route('/submit', methods=['POST'])

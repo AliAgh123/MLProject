@@ -69,28 +69,33 @@
 			</p>
 			<form action="/submit" method="post">
 				<label for="pregnancies">Pregnancies:</label>
-				<input type="text" id="pregnancies" name="pregnancies" />
+				<input type="text" id="pregnancies" name="pregnancies" required />
 
 				<label for="glucose">Glucose:</label>
-				<input type="text" id="glucose" name="glucose" />
+				<input type="text" id="glucose" name="glucose" required />
 
 				<label for="bloodPressure">Blood Pressure:</label>
-				<input type="text" id="bloodPressure" name="bloodPressure" />
+				<input type="text" id="bloodPressure" name="bloodPressure" required />
 
 				<label for="skinThickness">Skin Thickness:</label>
-				<input type="text" id="skinThickness" name="skinThickness" />
+				<input type="text" id="skinThickness" name="skinThickness" required />
 
 				<label for="insulin">Insulin:</label>
-				<input type="text" id="insulin" name="insulin" />
+				<input type="text" id="insulin" name="insulin" required />
 
 				<label for="BMI">BMI:</label>
-				<input type="text" id="BMI" name="BMI" />
+				<input type="text" id="BMI" name="BMI" required />
 
 				<label for="diabetesPedigree">Diabetes Pedigree:</label>
-				<input type="text" id="diabetesPedigree" name="diabetesPedigree" />
+				<input
+					type="text"
+					id="diabetesPedigree"
+					name="diabetesPedigree"
+					required
+				/>
 
 				<label for="age">Age:</label>
-				<input type="text" id="age" name="age" />
+				<input type="text" id="age" name="age" required />
 
 				<input type="submit" value="Submit" />
 			</form>
