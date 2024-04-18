@@ -1,11 +1,14 @@
 .hero {
+	height: 90vh;
+	padding: 25vh 3vw;
+}
+
+.wheat {
 	color: wheat;
 }
 
 .bg-hero {
 	background-image: url(../images/img1.jpg);
-	height: 90vh;
-	padding: 25vh;
 }
 
 .machine-learning-section {
@@ -22,6 +25,10 @@
 .question {
 	padding: 10vh;
 }
+.about-us {
+	padding-left: 0;
+	padding-right: 0;
+}
 
 .person-section {
 	padding: 12vh;
@@ -34,4 +41,9 @@
 .profile-image {
 	width: 50%;
 	border-radius: 50%;
+}
+
+.form {
+	height: auto;
+	padding: 25vh 3vw;
 }

@@ -18,8 +18,15 @@ def predict():
 
 @app.route('/submit', methods=['POST'])
 def submit_form():
-    data = [int(request.form.get('pregnancies')), int(request.form.get('glucose')), int(request.form.get('bloodPressure')), int(request.form.get('skinThickness')), int(request.form.get('insulin')), float(request.form.get('BMI')), float(request.form.get('diabetesPedigree')), int(request.form.get('age'))]
-
+    pregnancies = request.form.get('pregnancies')
+    glucose = request.form.get('glucose')
+    bloodPressure = request.form.get('bloodPressure')
+    skinThickness = request.form.get('skinThickness')
+    insulin = request.form.get('insulin')
+    BMI = float(request.form.get('BMI'))
+    diabetesPedigree = float(request.form.get('diabetesPedigree'))
+    age = request.form.get('age')
+    data = [pregnancies, glucose, bloodPressure, skinThickness, insulin, BMI, diabetesPedigree, age]
     prediction = model.predict([data])
     app.logger.debug(prediction)
     if(prediction == [0]):
