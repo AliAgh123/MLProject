@@ -140,7 +140,17 @@
 
 			<div class="person-section bg-secondary">
 				<div class="row">
-					<div class="col-md-4 paragraph-reversed" style="padding-top: 3%">
+					<div class="col-md-6 order-md-5 text-center">
+						<img
+							class="profile-image"
+							src="{{url_for('static', filename='images/profileImage.jpeg')}}"
+							alt="profile-image"
+						/>
+					</div>
+					<div
+						class="col-md-4 paragraph-reversed order-md-1"
+						style="padding-top: 3%"
+					>
 						<h2 class="text-center">Tamer El Halabi</h2>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -149,13 +159,6 @@
 						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
 						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 						culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-					<div class="col-md-6 text-center">
-						<img
-							class="profile-image"
-							src="{{url_for('static', filename='images/profileImage.jpeg')}}"
-							alt="profile-image"
-						/>
 					</div>
 				</div>
 			</div>

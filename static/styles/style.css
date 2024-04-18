@@ -47,3 +47,12 @@
 	height: auto;
 	padding: 25vh 3vw;
 }
+
+@media (max-width: 768px) {
+	.paragraph-reversed {
+		margin-left: 2vw;
+	}
+	.person-section {
+		text-align: center;
+	}
+}
