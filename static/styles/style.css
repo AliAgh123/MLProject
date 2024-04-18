@@ -1,3 +1,15 @@
+.navbar {
+	background-color: wheat;
+}
+
+.offcanvas {
+	background-color: wheat;
+}
+
+.btn-gold {
+	background-color: rgb(242, 237, 227);
+}
+
 .hero {
 	height: 90vh;
 	padding: 25vh 3vw;
@@ -12,9 +24,9 @@
 }
 
 .machine-learning-section {
-	height: 50vh;
-	margin-top: 10vh;
-	margin-bottom: 0vh;
+	background-color: wheat;
+	height: 60vh;
+	padding: 10vh 0;
 }
 
 .machine-learning-icon {
@@ -24,6 +36,8 @@
 
 .question {
 	padding: 10vh;
+	background-color: black;
+	color: wheat;
 }
 .about-us {
 	padding-left: 0;
@@ -32,10 +46,16 @@
 
 .person-section {
 	padding: 12vh;
+	background-color: wheat;
 }
 
 .paragraph-reversed {
 	margin-left: 12vw;
+}
+
+.colored-section {
+	color: wheat;
+	background-color: black;
 }
 
 .profile-image {
@@ -50,7 +70,7 @@
 
 @media (max-width: 768px) {
 	.paragraph-reversed {
-		margin-left: 2vw;
+		margin-left: 0vw;
 	}
 	.person-section {
 		text-align: center;
