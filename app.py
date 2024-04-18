@@ -1,17 +1,20 @@
 from flask import Flask
 from flask import render_template
 from flask import request
+from flask import url_for
 import joblib
 
 app = Flask(__name__)
 
 model = joblib.load('svc_model.pkl')
 
-
 @app.route("/")
-def hello_world():
+def index():
     return render_template('index.html')
 
+@app.route("/predict")
+def predict():
+    return render_template('form.html')
 
 @app.route('/submit', methods=['POST'])
 def submit_form():

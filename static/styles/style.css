@@ -1,0 +1,37 @@
+.hero {
+	color: wheat;
+}
+
+.bg-hero {
+	background-image: url(../images/img1.jpg);
+	height: 90vh;
+	padding: 25vh;
+}
+
+.machine-learning-section {
+	height: 50vh;
+	margin-top: 10vh;
+	margin-bottom: 0vh;
+}
+
+.machine-learning-icon {
+	width: 8%;
+	margin: 15px;
+}
+
+.question {
+	padding: 10vh;
+}
+
+.person-section {
+	padding: 12vh;
+}
+
+.paragraph-reversed {
+	margin-left: 12vw;
+}
+
+.profile-image {
+	width: 50%;
+	border-radius: 50%;
+}
