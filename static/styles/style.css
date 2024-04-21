@@ -1,3 +1,7 @@
+body {
+	background-color: black;
+}
+
 .navbar {
 	background-color: wheat;
 }
@@ -66,6 +70,22 @@
 .form {
 	height: auto;
 	padding: 25vh 3vw;
+}
+
+.border-top {
+	border-top-color: wheat !important;
+}
+
+.footer {
+	color: wheat;
+}
+
+.footer a {
+	color: wheat;
+}
+
+.form-page {
+	background-color: wheat;
 }
 
 @media (max-width: 768px) {
