@@ -19,14 +19,14 @@ def predict():
 
 @app.route('/submit', methods=['POST'])
 def submit_form():
-    pregnancies = request.form.get('pregnancies') if request.form.get('pregnancies') != 0 else 4 # 0 --> 17
-    glucose = request.form.get('glucose') if request.form.get('glucose') != 0 else 123 # 44 --> 200
-    bloodPressure = request.form.get('bloodPressure') if request.form.get('bloodPressure') != 0 else 73 # 24 --> 122
-    skinThickness = request.form.get('skinThickness') if request.form.get('skinThickness') != 0 else 30 # 7 --> 100
-    insulin = request.form.get('insulin') if request.form.get('insulin') != 0 else 155 # 14 --> 846
-    BMI = float(request.form.get('BMI')) if request.form.get('BMI') != 0 else 32.39 # 18.20 --> 67.10
+    pregnancies = request.form.get('pregnancies')# 0 --> 17
+    glucose = request.form.get('glucose') if request.form.get('glucose') != '0' else 123 # 44 --> 200
+    bloodPressure = request.form.get('bloodPressure') if request.form.get('bloodPressure') != '0'else 73 # 24 --> 122
+    skinThickness = request.form.get('skinThickness') if request.form.get('skinThickness') != '0' else 30 # 7 --> 100
+    insulin = request.form.get('insulin') if request.form.get('insulin') != '0'else 155 # 14 --> 846
+    BMI = float(request.form.get('BMI')) if request.form.get('BMI') != '0'else 32.39 # 18.20 --> 67.10
     # diabetesPedigree = float(request.form.get('diabetesPedigree'))
-    age = request.form.get('age') if request.form.get('age') != 0 else 33 # not negative
+    age = request.form.get('age') # not negative
     data = [[int(pregnancies), int(glucose), int(bloodPressure), int(skinThickness), int(insulin), BMI, int(age)]] # without diabetes pedigree
     
     if(not isinstance(BMI, float)):
