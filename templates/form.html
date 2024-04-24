@@ -120,20 +120,9 @@
 				</div>
 				<div class="col-md-4">
 					<label for="BMI" class="form-label">BMI:</label>
-					<input type="text" class="form-control" id="BMI" name="BMI" />
+					<input type="" class="form-control" id="BMI" name="BMI" />
 				</div>
 
-				<div class="col-md-6">
-					<label for="diabetesPedigree" class="form-label"
-						>Diabetes Pedigree:
-					</label>
-					<input
-						type="text"
-						class="form-control"
-						id="diabetesPedigree"
-						name="diabetesPedigree"
-					/>
-				</div>
 				<div class="col-md-6">
 					<label for="age" class="form-label">Age: </label>
 					<input type="number" class="form-control" id="age" name="age" />
@@ -143,6 +132,15 @@
 						Submit
 					</button>
 				</div>
+				{% if outOfRange %}
+				<div class="col-12">
+					<p>Values out of range! Double check them</p>
+				</div>
+				{% endif %} {% if isNumerical %}
+				<div class="col-12">
+					<p>BMI must be a decimal number</p>
+				</div>
+				{% endif %}
 			</form>
 		</div>
 
