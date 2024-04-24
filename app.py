@@ -29,11 +29,11 @@ def submit_form():
     age = request.form.get('age') if request.form.get('age') != 0 else 33 # not negative
     data = [[int(pregnancies), int(glucose), int(bloodPressure), int(skinThickness), int(insulin), BMI, int(age)]] # without diabetes pedigree
     
-    if(isinstance(BMI, float)):
+    if(not isinstance(BMI, float)):
         return render_template('form.html', outOfRange = False, isNumerical = True)
     
-    if (data[0][0] < 0 or data[0][0] > 17 or data[1][0] < 44 or data[1][0] > 200 or data[2][0] < 24 or data[2][0] > 122 or data[3][0] < 7 or data[3][0] > 100 or data[4][0] < 14 or data[4][0] > 846 or data[5][0] < 18.20
-        or data[5][0] > 67.10 or data[6][0] < 0):
+    if (data[0][0] < 0 or data[0][0] > 17 or data[0][1] < 44 or data[0][1] > 200 or data[0][2] < 24 or data[0][2] > 122 or data[0][3] < 7 or data[0][3] > 100 or data[0][4] < 14 or data[0][4] > 846 or data[0][5] < 18.20
+        or data[0][5] > 67.10 or data[0][6] < 0):
         return render_template('form.html', outOfRange = True, isNumerical = False)
     
     app.logger.debug(data)
