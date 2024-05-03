@@ -10,7 +10,7 @@ This project is a machine learning-based web application that predicts the likel
 - **Diabetes Prediction**: Based on the uploaded data, the application predicts the likelihood of the user having diabetes.
 
 ## Screenshots
-!(/Screenshots/img1.png)
+!["Screenshot of the website"](/Screenshots/img1.png)
 
 ## Live Demo
 
