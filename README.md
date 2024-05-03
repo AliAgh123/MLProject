@@ -9,6 +9,9 @@ This project is a machine learning-based web application that predicts the likel
 - **Data Upload**: Users can upload their health data in a structured format.
 - **Diabetes Prediction**: Based on the uploaded data, the application predicts the likelihood of the user having diabetes.
 
+## Screenshots
+!(/Screenshots/img1.png)
+
 ## Live Demo
 
 The application is deployed and can be accessed at https://mlproject-ntxp.onrender.com/.
