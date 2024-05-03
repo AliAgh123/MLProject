@@ -13,8 +13,8 @@ This project is a machine learning-based web application that predicts the likel
 !["Screenshot of the website"](/Screenshots/img1.png)
 
 ## Live Demo
-
-The application is deployed and can be accessed at https://mlproject-ntxp.onrender.com/.
+>[!IMPORTANT]
+>The application is deployed and can be accessed at https://mlproject-ntxp.onrender.com/.
 
 ## Installation
 
