@@ -20,16 +20,16 @@ The application is deployed and can be accessed at https://mlproject-ntxp.onrend
 git clone https://github.com/AliAgh123/MLProject.git
 ```
 2. Install the required packages:
-
+```
 pip install -r requirements.txt
-
+```
 
 ## Usage
 
 1. Run the application locally:
-
-python app.py
-
+```
+flask --app app run
+```
 2. Open a web browser and navigate to http://127.0.0.1:5000 .
 3. Upload your health data and get the prediction.
 
