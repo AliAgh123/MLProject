@@ -9,6 +9,8 @@ app = Flask(__name__)
 
 model = joblib.load('xgb_model.pkl')
 
+
+
 @app.route("/")
 def index():
     return render_template('index.html')
