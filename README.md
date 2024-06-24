@@ -15,6 +15,7 @@ This project is a machine learning-based web application that predicts the likel
 ## Live Demo
 >[!IMPORTANT]
 >The application is deployed and can be accessed at https://mlproject-ntxp.onrender.com/.
+>it might take some time to load because it is hosted on a free server (around 1 min delay)
 
 ## Installation
 
